@@ -2,17 +2,129 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0; 
+    background-color: #0D1B1E;
+    overflow-x: hidden;
 }
 .headercontainer {
+    position: sticky;
+    position: -webkit-sticky;
+    padding-top: 0.8%;
+    top: 0;
+    background: #5f2e3a;
+    width: 100vw;
+    height: 8vh;
+    z-index: 1;
+}
+.navs {
+    margin-left: 35.7%;
+}
+
+.sectioncontainerbox {
+    width: 100vw;
+    height: 90.5vh;
+}
+
+.homecontainer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    padding-top: 1.5%;
-    top: 0;
-    background: #5386E4;
-    width: 100vw;
-    height: 10vh;
+    padding-top: 100px;
+    margin: 10% 30%;
+    background: #2E3636;
+    box-shadow: 0px 0px 28px 1px rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 40vw;
+    height: 30vh;
+    color:  white;
+    font-weight: bold;
+}
+.growhometext {
+    font-size: 40px;
+    margin-top: -5%;
+}
+
+.homebutton {
+    border: none;
+    color: black;
+    background-color: #773344;
+    width: 120px;
+    height: 50px;
+    border-radius: 3px;
+    margin-top: 8%;
+}
+.homebutton:hover {
+    background-color: #773344d6;
+    color: white;
+    cursor: pointer;
+}
+
+.aboutus {
+background-color: #99907D;
+height: 100vh;
+}
+
+.aboutuscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    margin: 5%;
+    border-radius: 10px;
+    color:  white;
+    font-weight: bold;
+}
+.abouttext {
+    font-size: 70px;
+    width: 40vw;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+.aboutptext {
+    font-size: 20px;
+    width: 40vw;
+    text-align: center;
+}
+.aboutgridcontainer {
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f";
+}
+.daystrial {
+    grid-area: a;
+}
+.Price {
+    grid-area: b;
+}
+.Support {
+    grid-area: c;
+}
+.creativity {
+    grid-area: d;
+}
+.marketing {
+    grid-area: e;
+}
+.passion {
+    grid-area: f;
+}
+.gridbox {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    background-color: #3E7CB1;
+    border-radius: 20px;
+    margin: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.gridbox:hover {
+    transform: scale(1.1);
 }
 
 li {
