@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -22,6 +25,9 @@ body {
 .sectioncontainerbox {
     width: 100vw;
     height: 90.5vh;
+}
+.home {
+    height: 60vh;
 }
 
 .homecontainer {
@@ -49,7 +55,7 @@ body {
     background-color: #773344;
     width: 120px;
     height: 50px;
-    border-radius: 3px;
+    border-radius: 5px;
     margin-top: 8%;
 }
 .homebutton:hover {
@@ -62,7 +68,9 @@ body {
 background-color: #99907D;
 height: 100vh;
 }
-
+#aboutus{
+    margin-top: 4%;
+}
 .aboutuscontainer {
     display: flex;
     flex-direction: column;
@@ -116,7 +124,8 @@ height: 100vh;
     text-align: center;
     height: 150px;
     width: 150px;
-    background-color: #3E7CB1;
+    background-color: #958c79;
+    box-shadow: 0px 0px 10px 1px rgb(29, 29, 29);
     border-radius: 20px;
     margin: 20px;
     transition: 1s;
