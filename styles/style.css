@@ -11,7 +11,40 @@ body {
     background-image: url(/MarketingSite/images/Hexagon3.svg);
     color: white;
 }
-.headercontainer {
+a {
+    color: white;
+    text-decoration: none;
+}
+ul {
+    padding: 0;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+}
+
+ .chck {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(65, 65, 65);
+    opacity: 0.4;
+    z-index: -1;
+} 
+  .headerimg {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    z-index: 0;
+    left: 0;
+}  
+
+ .headercontainer {
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,6 +56,8 @@ body {
     background-color: #0D1B1E;
     border-bottom: 2px solid #9A031E;
     z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .sectioncontainer {
@@ -44,7 +79,7 @@ body {
     margin-left: 1%;
      margin-top: 1%; 
      margin-bottom: 1%; 
-    color: #087E8B;
+    color: #0496FF;
 }
 .hometext2 {
     font-size: 1.5rem;
@@ -57,24 +92,22 @@ body {
     font-size: 1.5rem;
     font-weight: bold; 
 }
-a {
+
+.homebtn {
+    background-color: #9A031E;
     color: white;
-    text-decoration: none;
-}
-li {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0 10px;
-    font-size: 1.5em;
-    color: #fff;
-    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-
-.headerimg {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    z-index: 0;
-    left: 0;
-}
+.homebtn:hover {
+    background-color: #29335C;
+    transform: scale(1.5);    
+} 
