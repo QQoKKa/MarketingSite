@@ -25,33 +25,31 @@ li {
     color: #fff;
     text-decoration: none;
 }
-.chck {
+/* .chck {
     position: absolute;
     width: 100%;
-    height: 200%;
+    height: 196%;
     background-color: rgb(65, 65, 65);
     opacity: 0.4;
     z-index: -1;
-} 
+}  */
 .backgroundimg1 {
     position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
-    margin: 0;
-    padding: 0;
-    background-image: url(/MarketingSite/images/Hexagon3.svg);
+    background-image: url(/MarketingSite/images/hex1.png);
     z-index: -2;
 }
-.backgroundimage2 {
+/* .backgroundimage2 {
     position: relative;
     margin-top: 15.3%;
     width: 100vw;
     height: 100vh;
     background-image: url(/MarketingSite/images/Hexagon.svg);
     z-index: -2;
-} 
+}  */
 
   .headerimg {
     position: absolute;
@@ -75,6 +73,7 @@ li {
     z-index: 1;
     padding-top: 10px;
     padding-bottom: 10px;
+    top: 0;
 }
 
 .hover {
@@ -144,3 +143,57 @@ li {
     background-color: #29335C;
     transform: scale(1.5);    
 } 
+
+.section2container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/MarketingSite/images/hex2.png);
+    margin-top: 15.3%;
+    z-index: -2;
+}
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.abouttext1 {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-left: 1%;
+    margin-top: 5%; 
+    margin-bottom: 1%; 
+    color: white;
+    border-bottom: 2px solid white;
+    width: 800px;
+}
+
+.abouttext2 {
+    width: 800px;
+}
+
+
+
+#backToTopButton {
+    position: sticky;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* some fancy hover animation */
+#backToTopButton:hover {
+    transform: translate(-50%, -10%);
+    transition: 0.3s;
+}
