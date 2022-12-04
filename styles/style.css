@@ -144,7 +144,8 @@ ul {
     border-top: 2px solid #9A031E;
     width: 100vw;
     height: 100vh;
-    background-image: url(/MarketingSite/images/hex2.png);
+    /* background-image: url(/MarketingSite/images/hex2.png); */
+    background-color: #0D1B1E;
     margin-top: 15.3%;
     z-index: -2;
 }
@@ -169,24 +170,38 @@ ul {
     color: white;
     border-bottom: 2px solid white;
     width: 800px;
-    color: #F7E733;
+    color: #0496FF;
+}
+.list {
 }
 
 .aboutli {
     height: 120px;
     width: 600px;
-    background-color: white;
-    color: black;
+    /* background-color: #9A031E; */
+    border: 2px solid #9A031E;
+    color: white;
     font-size: 20px;
     border-radius: 15px;
     margin-bottom: 1%;
     padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
 }
 .aboutspan {
     font-size: 18px;
     font-weight: bold;
     position: absolute;
-    color: black;
+    color: white;
+}
+.sectioncontainer:hover {
+    cursor: default;
+
+}
+.section2container:hover {
+    cursor: default;
+
 }
 .as1 {
     margin-left: 1%;
@@ -203,7 +218,7 @@ ul {
     margin-top: 20px;
 }
 .bi {
-    color: black;
+    color: white;
 }
 .bi-people-fill {
     font-size: 80px;

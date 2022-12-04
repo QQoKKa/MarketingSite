@@ -5,31 +5,31 @@ $('.homebtn').click(function() {
 })
 
 $('.ab1').hover(function() {
-    $(this).css('background-color', 'black');
+    $(this).css('background-color', '#9A031E');
     $('.bi-people-fill').css('color', 'white');
     $('.as1').css('color', 'white');
 }, function() {
-    $(this).css('background-color', 'white');
-    $('.bi-people-fill').css('color', 'black');
-    $('.as1').css('color', 'black');
+    $(this).css('background', 'none');
+    $('.bi-people-fill').css('color', 'white');
+    $('.as1').css('color', 'white');
 })
 
 $('.ab2').hover(function() {
-    $(this).css('background-color', 'black');
+    $(this).css('background-color', '#9A031E');
     $('.bi-building-fill').css('color', 'white');
     $('.as2').css('color', 'white');
 }, function() {
-    $(this).css('background-color', 'white');
-    $('.bi-building-fill').css('color', 'black');
-    $('.as2').css('color', 'black');
+    $(this).css('background', 'none');
+    $('.bi-building-fill').css('color', 'white');
+    $('.as2').css('color', 'white');
 })
 
 $('.ab3').hover(function() {
-    $(this).css('background-color', 'black');
+    $(this).css('background', '#9A031E');
     $('.bi-trophy-fill').css('color', 'white');
     $('.as3').css('color', 'white');
 }, function() {
-    $(this).css('background-color', 'white');
-    $('.bi-trophy-fill').css('color', 'black');
-    $('.as3').css('color', 'black');
+    $(this).css('background', 'none');
+    $('.bi-trophy-fill').css('color', 'white');
+    $('.as3').css('color', 'white');
 })
