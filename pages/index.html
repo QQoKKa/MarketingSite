@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link rel="stylesheet" href="/MarketingSite/styles/style.css">
     <title>GrowIt</title>
@@ -12,15 +14,13 @@
     <header  class="  headercontainer">
         <img class="headerimg" src="/MarketingSite/images/logo2.png" alt="">
         <ul class="navs">
-            <li><a class="hover" href="">Home</a></li>
-            <li><a class="hover" href="index.html#aboutus">About Us</a></li>
-            <li><a class="hover" href="">Our Service</a></li>
-            <li><a class="hover" href="">Contact</a></li>
+            <li class="homeli"><a class="hover" href="index.html">Home</a></li>
+            <li class="homeli"><a class="hover" href="index.html#aboutus">About Us</a></li>
+            <li class="homeli"><a class="hover" href="">Our Service</a></li>
+            <li class="homeli"><a class="hover" href="">Contact</a></li>
         </ul>
     </header>
-    <div class="chck"></div>
     <div class="backgroundimg1"></div>
-
     <section class="sectioncontainer">
         <div class="homewelcome">
             <h1 class="hometext1">GrowItUp</h1>
@@ -31,10 +31,15 @@
     </section>
     <div class="backgroundimage2">
     <section class="section2container">
-        <div class="aboutus">
+        <div id="aboutus" class="aboutus">
             <h1 class="abouttext1">About Us</h1>
-            <p class="abouttext2">Our Agency is created by young and aspiring people. Team is made of students from around the world, who want to gain work experience and become valuable<br>
-            Our main goal is to help young people and make small businesses grow to ther strong position</p>
+        </div>
+        <div class="list">
+            <ul class="ul1">
+                <li class="aboutli ab1"><i class="bi bi-people-fill"></i><span class="aboutspan as1"> Our team is made of young and aspiring people<br>who want to gain work experience<br> in proffesional workplace</span></li>
+                <li class="aboutli ab2"><i class="bi bi-building-fill"></i></li><span class="aboutspan as2"></span>
+                <li class="aboutli ab3"><i class="bi bi-trophy-fill"></i></li><span class="aboutspan as3"></span>
+            </ul>
         </div>
     </div>
     </section>

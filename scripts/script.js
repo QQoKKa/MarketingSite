@@ -1,21 +1,35 @@
-//create back to top button and make it go to top of page
-function createBackToTopButton() {
-    var backToTopButton = document.createElement("button");
-    backToTopButton.id = "backToTopButton";
-    backToTopButton.innerHTML = "Back to Top";
-    $(backToTopButton).css("display", "none");
-    backToTopButton.onclick = function () {
-        window.scrollTo(0, 0);
-    };
-    document.body.appendChild(backToTopButton);
-}
+$('.homebtn').click(function() {
+        $('html, body').animate({
+        scrollTop: $('#aboutus').offset().top
+    }, 1000);
+})
 
-createBackToTopButton();
-//appear back to top button when user scrolls down
-window.onscroll = function () {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.getElementById("backToTopButton").style.display = "block";
-    } else {
-        document.getElementById("backToTopButton").style.display = "none";
-    }
-}
+$('.ab1').hover(function() {
+    $(this).css('background-color', 'black');
+    $('.bi-people-fill').css('color', 'white');
+    $('.as1').css('color', 'white');
+}, function() {
+    $(this).css('background-color', 'white');
+    $('.bi-people-fill').css('color', 'black');
+    $('.as1').css('color', 'black');
+})
+
+$('.ab2').hover(function() {
+    $(this).css('background-color', 'black');
+    $('.bi-building-fill').css('color', 'white');
+    $('.as2').css('color', 'white');
+}, function() {
+    $(this).css('background-color', 'white');
+    $('.bi-building-fill').css('color', 'black');
+    $('.as2').css('color', 'black');
+})
+
+$('.ab3').hover(function() {
+    $(this).css('background-color', 'black');
+    $('.bi-trophy-fill').css('color', 'white');
+    $('.as3').css('color', 'white');
+}, function() {
+    $(this).css('background-color', 'white');
+    $('.bi-trophy-fill').css('color', 'black');
+    $('.as3').css('color', 'black');
+})

@@ -14,25 +14,22 @@ a {
     color: white;
     text-decoration: none;
 }
+a:hover {
+    color: white;
+}
 ul {
     padding: 0;
 }
-li {
+
+.homeli {
     list-style-type: none;
     display: inline-block;
     padding: 0 10px;
+    padding-top: 10px;
     font-size: 1.5em;
     color: #fff;
     text-decoration: none;
 }
-/* .chck {
-    position: absolute;
-    width: 100%;
-    height: 196%;
-    background-color: rgb(65, 65, 65);
-    opacity: 0.4;
-    z-index: -1;
-}  */
 .backgroundimg1 {
     position: fixed;
     width: 100vw;
@@ -66,7 +63,7 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 7vh;
     width: 100vw;
     background-color: #0D1B1E;
     border-bottom: 2px solid #9A031E;
@@ -77,8 +74,7 @@ li {
 }
 
 .hover {
-    --c:linear-gradient(rgb(255, 255, 255) 0 0); /* update the color here */
-    
+    --c:linear-gradient(rgb(255, 255, 255) 0 0);
     padding-bottom: .15em;
     background: var(--c), var(--c);
     background-size: .3em .1em;
@@ -145,6 +141,7 @@ li {
 } 
 
 .section2container {
+    border-top: 2px solid #9A031E;
     width: 100vw;
     height: 100vh;
     background-image: url(/MarketingSite/images/hex2.png);
@@ -167,19 +164,56 @@ li {
     font-size: 8rem;
     font-weight: bold;
     margin-left: 1%;
-    margin-top: 5%; 
+    margin-top: 10%; 
     margin-bottom: 1%; 
     color: white;
     border-bottom: 2px solid white;
     width: 800px;
+    color: #F7E733;
 }
 
-.abouttext2 {
-    width: 800px;
+.aboutli {
+    height: 120px;
+    width: 600px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-bottom: 1%;
+    padding-left: 10px;
+}
+.aboutspan {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    color: black;
+}
+.as1 {
+    margin-left: 1%;
+    margin-top: 20px;
 }
 
+.as2 {
+    margin-left: 1%;
+    margin-top: 20px;
+}
 
-
+.as3 {
+    margin-left: 1%;
+    margin-top: 20px;
+}
+.bi {
+    color: black;
+}
+.bi-people-fill {
+    font-size: 80px;
+}
+.bi-building-fill {
+    font-size: 80px;
+}
+.bi-trophy-fill{
+    font-size: 80px;
+}
 #backToTopButton {
     position: sticky;
     bottom: 0;
