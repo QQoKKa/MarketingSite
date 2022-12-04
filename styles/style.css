@@ -229,20 +229,11 @@ ul {
 .bi-trophy-fill{
     font-size: 80px;
 }
-#backToTopButton {
-    position: sticky;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background: none;
-    color: white;
-    border: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-}
-/* some fancy hover animation */
-#backToTopButton:hover {
-    transform: translate(-50%, -10%);
-    transition: 0.3s;
+
+.section3container {
+    border-top: 2px solid #9A031E;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1B1E;
+    z-index: -2;
 }
