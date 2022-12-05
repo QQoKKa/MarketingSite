@@ -36,7 +36,7 @@ ul {
     height: 100vh;
     top: 0;
     left: 0;
-    background-image: url(/MarketingSite/images/hex1.png);
+    background-image: url(/images/hex1.png);
     z-index: -2;
 }
 /* .backgroundimage2 {
