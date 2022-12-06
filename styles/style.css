@@ -102,7 +102,7 @@ ul {
 
 
 .hometext1 {
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: bold;
     margin-left: 1%;
      margin-top: 1%; 
@@ -162,7 +162,7 @@ ul {
 }
 
 .abouttext1 {
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: bold;
     margin-left: 1%;
     margin-top: 4%; 
@@ -256,7 +256,7 @@ ul {
 }
 
 .servicetext {
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: bold;
     margin-left: 1%;
     margin-top: 4%; 
@@ -276,9 +276,8 @@ ul {
     height: 380px;
     /* display grind 3 rows 3 colums center */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a b c" "d e f";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin-left: auto;
     margin-right: auto;
     gap: 10px;
@@ -296,28 +295,9 @@ ul {
     transition: all 1s;
 }
 
-.sv1 {
-    grid-area: a;
-}
-.sv2 {
-    grid-area: b;
-}
-.sv3 {
-    grid-area: c;
-}
-.sv4 {
-    grid-area: d;
-}
-.sv5 {
-    grid-area: e;
-}
-.sv6 {
-    grid-area: f;
-}
-
 .bis {
     font-size: 50px;
-}
+} 
 
 .serviceli:hover {
     background-color: #9A031E;
@@ -334,7 +314,7 @@ ul {
 }
 
 .contacttext {
-    font-size: 8rem;
+    font-size: 8vw;
     font-weight: bold;
     margin-left: 1%;
     margin-top: 4%; 
@@ -392,7 +372,7 @@ ul {
 
 .footercontainer {
     width: 100vw;
-    height: 25vh;
+    height: fit-content;
     background-color: #0D1B1E;
     z-index: -2;
     cursor: default;
@@ -416,4 +396,70 @@ ul {
 }
 .footerul {
     margin-top: 5%;
+}
+
+@media screen and (max-width: 850px) {
+    .footerimg {
+        width: 100px;
+        height: 100px;
+    }
+    .footerli {
+        font-size: 15px;
+    }
+    .trademark {
+        top: -50px;
+    }
+    .contactinput {
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .contactbtn {
+        width: 300px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .contacttext{
+        width: 300px;
+    }
+
+    .abouttext1 {
+        width: 300px;
+    }
+    .servicetext {
+        width: 300px;
+    }
+    .headercontainer {
+        height: 20vh;
+        position: relative;
+    }
+    .headerimg {
+        position: relative;
+        top: 10%;
+    }
+    .hometext2 {
+        margin-top: -1%;
+        font-size: 5vw;
+    }
+    .aboutli {
+        width: 300px;
+    }
+    .aboutspan {
+        font-size: 12px;
+        width: 200px;
+    }
+    .serviceli {
+        width: 150px;
+        height: 150px;
+        font-size: 10px;
+    }
+    .ourserviceul {
+        width: 300px;
+        height: 300px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .section4container {
+        height: 70vh;
+    }
 }

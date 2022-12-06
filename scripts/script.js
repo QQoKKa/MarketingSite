@@ -10,6 +10,12 @@ $('.bic').click(function() {
     }, 1000);
 })
 
+$('.serviceli').click(function() {
+        $('html, body').animate({
+        scrollTop: $('#contact').offset().top
+    }, 1000);
+})
+
 $('.ab1').hover(function() {
     $(this).css('background-color', '#9A031E');
     $('.bi-people-fill').css('color', 'white');
@@ -40,15 +46,5 @@ $('.ab3').hover(function() {
     $('.as3').css('color', 'white');
 })
 
-// create trademark text on bottom of site in position absolute and center it
-var trademark = document.createElement('p');
-trademark.innerHTML = '© 2021 - All Rights Reserved';
-trademark.style.position = 'absolute';
-trademark.style.top = $(document).height() -20 + 'px';
-trademark.style.left = '50%';
-trademark.style.transform = 'translateX(-50%)';
-trademark.style.color = 'white';
-trademark.style.fontSize = '0.7rem';
-document.body.appendChild(trademark);
-
-
+const year = new Date().getFullYear();
+$('.li4').text('©'+year+' GrowItUpMarketing');
