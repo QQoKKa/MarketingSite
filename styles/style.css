@@ -244,7 +244,7 @@ ul {
 
 .bic:hover {
     transform: scale(1.5);
-    color: #744FC6;
+    color: #29335C;
 }
 .section3container {
     border-top: 4px solid #9A031E;
@@ -252,6 +252,7 @@ ul {
     height: 100vh;
     background-color: #0D1B1E;
     z-index: -2;
+    cursor: default;
 }
 
 .servicetext {
@@ -263,7 +264,7 @@ ul {
     color: white;
     border-bottom: 2px solid white;
     width: 800px;
-    color: #744FC6;
+    color: #0496FF;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -271,26 +272,28 @@ ul {
 
 
 .ourserviceul {
-    width: 800px;
-    height: 200px;
+    width: 700px;
+    height: 380px;
+    /* display grind 3 rows 3 colums center */
     display: grid;
-    grid-template-areas:
-    "a b c"
-    "d e f";
-    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d e f";
     margin-left: auto;
     margin-right: auto;
-    background-color: black;
-    grid-template-columns: repeat(8, 1fr);
-
+    gap: 10px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .serviceli {
-    width: 150px;
-    height: 150px;
-    background-color: white;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #9A031E;
     list-style-type: none;
     border-radius: 15px;
+    text-align: center;
+    transition: all 1s;
 }
 
 .sv1 {
@@ -310,4 +313,87 @@ ul {
 }
 .sv6 {
     grid-area: f;
+}
+
+.bis {
+    font-size: 50px;
+}
+
+.serviceli:hover {
+    background-color: #9A031E;
+    cursor: pointer;
+}
+
+.section4container {
+    border-top: 4px solid #9A031E;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0D1B1E;
+    z-index: -2;
+    cursor: default;
+}
+
+.contacttext {
+    font-size: 8rem;
+    font-weight: bold;
+    margin-left: 1%;
+    margin-top: 4%; 
+    margin-bottom: 1%; 
+    color: white;
+    border-bottom: 2px solid white;
+    width: 800px;
+    color: #0496FF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-top: 5%;
+}
+
+.contactinput {
+    width: 500px;
+    height: 50px;
+    border-radius: 15px;
+    border: 2px solid #9A031E;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+}
+
+.contactbtn {
+    width: 500px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    transition: all 0.5s;
+    text-align: center;
+    background-color: #9A031E;
+    color: white;
+    cursor: pointer;
+}
+
+.contactbtn:hover {
+    background-color: #29335C;
+}
+
+.footercontainer {
+    width: 100vw;
+    height: 25vh;
+    background-color: #0D1B1E;
+    z-index: -2;
+    cursor: default;
 }

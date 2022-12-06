@@ -4,6 +4,12 @@ $('.homebtn').click(function() {
     }, 1000);
 })
 
+$('.bic').click(function() {
+        $('html, body').animate({
+        scrollTop: $('#service').offset().top
+    }, 1000);
+})
+
 $('.ab1').hover(function() {
     $(this).css('background-color', '#9A031E');
     $('.bi-people-fill').css('color', 'white');
