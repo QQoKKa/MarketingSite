@@ -39,3 +39,16 @@ $('.ab3').hover(function() {
     $('.bi-trophy-fill').css('color', 'white');
     $('.as3').css('color', 'white');
 })
+
+// create trademark text on bottom of site in position absolute and center it
+var trademark = document.createElement('p');
+trademark.innerHTML = '© 2021 - All Rights Reserved';
+trademark.style.position = 'absolute';
+trademark.style.top = $(document).height() -20 + 'px';
+trademark.style.left = '50%';
+trademark.style.transform = 'translateX(-50%)';
+trademark.style.color = 'white';
+trademark.style.fontSize = '0.7rem';
+document.body.appendChild(trademark);
+
+
