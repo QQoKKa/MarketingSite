@@ -388,7 +388,7 @@ ul {
     margin-top: 5%;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 880px) {
     .footerimg {
         width: 100px;
         height: 100px;
@@ -420,7 +420,7 @@ ul {
         width: 300px;
     }
     .headercontainer {
-        height: 20vh;
+        height: 10vh;
         position: relative;
     }
     .headerimg {
@@ -451,5 +451,15 @@ ul {
     }
     .section4container {
         height: 70vh;
+    }
+    .homeli {
+        display: none;
+    }
+    .section2container {
+        margin-top: 150%;
+    }
+    .hometext1 {
+        font-size: 20vw;
+        margin-top: 50%;
     }
 }
