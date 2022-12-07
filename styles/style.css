@@ -39,14 +39,6 @@ ul {
     background-image: url(/images/hex1.png);
     z-index: -2;
 }
-/* .backgroundimage2 {
-    position: relative;
-    margin-top: 15.3%;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(/MarketingSite/images/Hexagon.svg);
-    z-index: -2;
-}  */
 
   .headerimg {
     position: absolute;
@@ -144,7 +136,6 @@ ul {
     border-top: 4px solid #9A031E;
     width: 100vw;
     height: 100vh;
-    /* background-image: url(/MarketingSite/images/hex2.png); */
     background-color: #0D1B1E;
     margin-top: 15.3%;
     z-index: -2;
@@ -274,7 +265,6 @@ ul {
 .ourserviceul {
     width: 700px;
     height: 380px;
-    /* display grind 3 rows 3 colums center */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
