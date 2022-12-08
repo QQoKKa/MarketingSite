@@ -1,11 +1,20 @@
 <?php 
+    //take form from index.html
 
-$to = "test@growitupmarketing.com";
+
+
+$to = "TestMail";
 $subject = "Test mail";
 $message = "Hello! This is a simple email message.";
 $from = "Test";
 $headers = "From:" . $from;
-mail($to,$subject,$message,$headers);
+
+if (mail($to,$subject,$message,$headers)) {
+    header("Location: ../index.html");
+} else {
+    echo "ERROR: Mail not sent";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +25,11 @@ mail($to,$subject,$message,$headers);
     <title>Document</title>
 </head>
 <body>
-    
+    <button>Come Back</button>
+    <script>
+        document.querySelector("button").addEventListener("click", () => {
+            window.location.href = "../index.html";
+        })
+    </script>
 </body>
 </html>
