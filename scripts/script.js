@@ -50,14 +50,31 @@ const year = new Date().getFullYear();
 $('.li4').text('©'+year+' GrowItUpMarketing');
 
 
-// // on id #message focus set height to 200px
-// $('#message').focus(function() {
-//     $(this).css('height', '200px');
-// })
+$('#message').focus(function() {
+    $(this).css('height', '200px');
+})
 
-// $('#message').blur(function() {
-//     $(this).css('height', '50px');
-// })
+$('#message').blur(function() {
+    $(this).css('height', '50px');
+})
 
-// set id #message height wrap content
-$('#message').css('height', $('#message').prop('scrollHeight') + "px");
+
+// $(document).ready(function(){
+//     $('.contactbtn').attr('disabled',true);
+//     $('#message').keyup(function(){
+//         if($(this).val().length !=0 && $('#email').val().length !=0 && $('#name').val().length !=0 && $('#checkboxin').is(':checked'))
+//             $('.contactbtn').attr('disabled', false);            
+//         else
+//             $('.contactbtn').attr('disabled',true);
+//     })
+// });
+
+// if #message is not empty and checkbox is checked, then enable the button
+$('.contactbtn').attr('disabled', true);
+$('#message').keyup(function() {
+    if($(this).val().length !=0 && $('#email').val().length !=0 && $('#checkboxin').is(':checked')) {
+        $('.contactbtn').attr('disabled', false);
+    } else {
+        $('.contactbtn').attr('disabled',true);
+    }
+}) 

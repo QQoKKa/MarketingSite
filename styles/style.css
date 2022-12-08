@@ -393,6 +393,13 @@ ul {
     height: auto;
 }
 
+#checkbox {
+    display: inline;
+}
+
+#chckboxa {
+    color: blue;
+}
 @media screen and (max-width: 880px) {
     .footerimg {
         width: 100px;

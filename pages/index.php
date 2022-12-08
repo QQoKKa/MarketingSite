@@ -1,5 +1,4 @@
 <?php 
-    //sent data of form to email.php
     if (isset($_POST['submit'])) {
         $name = $_POST['name'];
         $email = $_POST['email'];
@@ -89,7 +88,8 @@
                     <input class="contactinput" type="text" id="email" name="email" placeholder="Email*">
                     <input class="contactinput" type="text" id="" name="subject" placeholder="Website name / Url">
                     <textarea class="contactinput" id="message" name="message" placeholder="Message*"></textarea>
-                    <button class="contactbtn" type="submit" name="submit">Send</button>
+                    <input type="checkbox" id="checkbox" name="checkbox"><p class="rodocheckbox">I have read and accept the information in the<a id="chckboxa" href="/pages/rodo.html">link</a></p>
+                    <button class="contactbtn" type="submit" name="submit"></button>
                 </form>
         </div>
     </section>
