@@ -388,6 +388,11 @@ ul {
     margin-top: 5%;
 }
 
+#message {
+    resize: none;
+    height: auto;
+}
+
 @media screen and (max-width: 880px) {
     .footerimg {
         width: 100px;

@@ -1,3 +1,21 @@
+<?php 
+    //sent data of form to email.php
+    if (isset($_POST['submit'])) {
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+        $to = "test@growitupmarketing.com";
+        $subject = $_POST['subject'];
+        $mailsubject = "New message from GrowItUp";
+        $headers = "From: " . $email;
+        $txt = "You have received an email from: " . $name . "\n their Site: ". ".\nMessage:\n" . $message;
+        mail($to,$mailsubject,$txt,$headers);
+        header("Location: index.php?mailsend");
+        header("refresh:2; url=/");
+    }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,10 +35,10 @@
     <header  class="  headercontainer">
         <img class="headerimg" src="/images/logo2.png" alt="">
         <ul class="navs">
-            <li class="homeli"><a class="hover" href="index.html">Home</a></li>
-            <li class="homeli"><a class="hover" href="index.html#aboutus">About Us</a></li>
-            <li class="homeli"><a class="hover" href="">Our Service</a></li>
-            <li class="homeli"><a class="hover" href="">Contact</a></li>
+            <li class="homeli"><a class="hover" href="/">Home</a></li>
+            <li class="homeli"><a class="hover" href="/#aboutus">About Us</a></li>
+            <li class="homeli"><a class="hover" href="/#service">Our Service</a></li>
+            <li class="homeli"><a class="hover" href="/#contact">Contact</a></li>
         </ul>
     </header>
     <div class="backgroundimg1"></div>
@@ -66,11 +84,11 @@
         <div class="contactlist">
             <div class="contactformbox">
                 <h1 id="contact" class="contacttext">Contact Us</h1>
-                <form class="contactform" action="index.html" method="post">
-                    <input class="contactinput" type="text" name="name" placeholder="Name*">
-                    <input class="contactinput" type="text" name="email" placeholder="Email*">
-                    <input class="contactinput" type="text" name="subject" placeholder="Website name / Url">
-                    <textarea class="contactinput" name="message" placeholder="Message*"></textarea>
+                <form class="contactform" action="index.php" method="post">
+                    <input class="contactinput" type="text" id="name" name="name" placeholder="Name*">
+                    <input class="contactinput" type="text" id="email" name="email" placeholder="Email*">
+                    <input class="contactinput" type="text" id="" name="subject" placeholder="Website name / Url">
+                    <textarea class="contactinput" id="message" name="message" placeholder="Message*"></textarea>
                     <button class="contactbtn" type="submit" name="submit">Send</button>
                 </form>
         </div>

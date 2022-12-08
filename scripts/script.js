@@ -48,3 +48,16 @@ $('.ab3').hover(function() {
 
 const year = new Date().getFullYear();
 $('.li4').text('©'+year+' GrowItUpMarketing');
+
+
+// // on id #message focus set height to 200px
+// $('#message').focus(function() {
+//     $(this).css('height', '200px');
+// })
+
+// $('#message').blur(function() {
+//     $(this).css('height', '50px');
+// })
+
+// set id #message height wrap content
+$('#message').css('height', $('#message').prop('scrollHeight') + "px");

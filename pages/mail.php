@@ -1,19 +1,16 @@
 <?php 
-    //take form from index.html
+require(" index.php ");
 
-
-
-$to = "TestMail";
-$subject = "Test mail";
-$message = "Hello! This is a simple email message.";
-$from = "Test";
-$headers = "From:" . $from;
-
+$to = "service@growitupmarketing.com";
+$subject = "New message from GrowItUp";
+$message = "Name: " . $_POST['name'] . "\nEmail: " . $_POST['email'] . "\nMessage: " . $_POST['message'];
+$headers = "From: " . $_POST['email'];
 if (mail($to,$subject,$message,$headers)) {
-    header("Location: ../index.html");
+    header("Location: ../index.php");
 } else {
     echo "ERROR: Mail not sent";
 }
+
 
 ?>
 <!DOCTYPE html>
@@ -28,7 +25,7 @@ if (mail($to,$subject,$message,$headers)) {
     <button>Come Back</button>
     <script>
         document.querySelector("button").addEventListener("click", () => {
-            window.location.href = "../index.html";
+            window.location.href = "../index.php";
         })
     </script>
 </body>
