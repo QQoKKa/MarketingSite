@@ -459,7 +459,10 @@ ul {
         margin-top: 150%;
     }
     .hometext1 {
-        font-size: 20vw;
+        font-size: 15vw;
         margin-top: 50%;
+    }
+    .bic {
+        display: none;
     }
 }
