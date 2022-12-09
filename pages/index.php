@@ -31,6 +31,9 @@
     <title>GrowIt</title>
 </head>
 <body>
+    <div class="alert alert-succes">
+        Message Sent, Thank you for contact
+    </div>
     <header  class="  headercontainer">
         <img class="headerimg" src="/images/logo2.png" alt="">
         <ul class="navs">

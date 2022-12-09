@@ -92,3 +92,14 @@ $('#checkboxin').click(function() {
         $('.contactbtn').css('background-color', '#9A031E');
     }
 })
+ 
+$('.alertbutton').click(function() {
+   window.location.href = 'https://growitupmarketing.com';
+})
+
+ if(window.location.href == 'https://growitupmarketing.com?mailsend') {
+    $('.alert-succes').css('visibility', 'visible');
+}
+else {
+    $('.alert-succes').css('visibility', 'hidden');
+}
