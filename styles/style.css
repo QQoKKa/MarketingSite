@@ -394,7 +394,8 @@ ul {
 }
 
 #checkbox {
-    display: inline;
+    display: flex;
+    flex-direction: column;
 }
 
 #chckboxa {

@@ -70,11 +70,25 @@ $('#message').blur(function() {
 // });
 
 // if #message is not empty and checkbox is checked, then enable the button
+// $('.contactbtn').attr('disabled', true);
+// $('#message').keyup(function() {
+//     if($(this).val().length !=0 && $('#email').val().length !=0 && $('#checkboxin').is(':checked')) {
+//         $('.contactbtn').attr('disabled', false);
+//         $('.contactbtn').css('background-color', '#1e6932');
+//     } else {
+//         $('.contactbtn').attr('disabled',true);
+//         $('.contactbtn').css('background-color', '#9A031E');
+//     }
+// }) 
+
+// if checnox is checked, then enable the button
 $('.contactbtn').attr('disabled', true);
-$('#message').keyup(function() {
-    if($(this).val().length !=0 && $('#email').val().length !=0 && $('#checkboxin').is(':checked')) {
+$('#checkboxin').click(function() {
+    if($(this).is(':checked') && $('#message').val().length !=0 && $('#email').val().length !=0 && $('#name').val().length !=0) {
         $('.contactbtn').attr('disabled', false);
+        $('.contactbtn').css('background-color', '#1e6932');
     } else {
         $('.contactbtn').attr('disabled',true);
+        $('.contactbtn').css('background-color', '#9A031E');
     }
-}) 
+})
